@@ -11,6 +11,21 @@ the ActiveMQ ,you will not receive any messages.
 
 mq 也有PooledConnectionFactory 支持配置多个connection    
 
+MessageProducer和 Message接口分别有 setDeliveryMode以及setJMSDeliveryMode方法,两者达到的效果应该都一样,如果为true，那么
+jms server会将消息保存到服务器本地，即时把服务器重启也不会丢失
+
+
+
+
+
+
+
+
+
+
+
+
+
 JTA的分布式事务支持是要靠数据库厂商的支持的
 自己实现分布式事务的例子：https://www.ibm.com/developerworks/cn/java/j-lo-jta/
 mysql5.7才开始支持分布式事务 :http://dev.mysql.com/doc/refman/5.7/en/xa.html

@@ -18,13 +18,12 @@ public class Sender {
 	
 	public void sendTestMessage(){
 		
-		
 		try{
-			
 			jmsTemplate.send(new MessageCreator(){
 				public Message createMessage(Session session) throws JMSException {
 					TextMessage ms = session.createTextMessage();
 					ms.setText("i am a message");
+					//模式在这里设置，
 					return ms;
 				}
 			});
