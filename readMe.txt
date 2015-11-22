@@ -1,4 +1,6 @@
 
+学习ActiveMQ笔记程序
+
 队列消息和topic消息最大的区别就是队列消息消费者任何时候都可以连接上来，如果有消息就会收到，但是Topic
 的subscriber一定要先连上MQ，然后publisher再发消息，这样才会收到，如果publisher先发消息，然后publisher再
 连接上来，那么之前的消息就收不到了
